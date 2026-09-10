@@ -6,73 +6,70 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Voce descobre a serie 'O Mentalista' e assiste ao primeiro episodio, ficando impressionado com a capacidade de Patrick Jane de ler as pessoas apenas observando detalhes invisiveis para os outros. Qual o seu primeiro pensamento?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "afirmacao"
+                texto: "Isso e assustador! Ninguem deveria conseguir ler os outros tao facilmente.",
+                afirmacao: "Voce sempre teve um pe atras com pessoas muito observadoras,"
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "afirmacao"
+                texto: "Isso e incrivel! Queria ter essa mesma capacidade de observacao.",
+                afirmacao: "Voce ficou fascinado pela arte da deducao e da linguagem corporal,"
             }           
-            
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre elaIA. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de tecnologia em sala de aula. Qual atitude você toma?",
+        enunciado: "Na historia, Patrick Jane busca vinganca contra o misterioso serial killer Red John, responsavel por uma grande tragedia em sua vida. Como voce avalia a motivacao do protagonista?",
         alternativas: [
             {
-                texto:"Utilizar uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento",
-                afirmacao:"afirmacao"
+                texto: "Compreensivel, mas a busca por vinganca cega pode destrui-lo antes de alcancar seu objetivo.",
+                afirmacao: "acredita que a justica deve prevalecer sobre o desejo de vinganca pessoal"
             },
             {
-                texto: "Escrever o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao:"afirmacao"
+                texto: "Totalmente justificada, ele tem todo o direito de fazer justica com as proprias maos.",
+                afirmacao: "e apoia a determinacao obstinada de Jane em fazer justica a qualquer custo."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Durante as investigacoes na CBI, Jane frequentemente ignora os protocolos policiais e usa truques de magica ou manipulacao psicologica para pegar os criminosos. O que voce acha dessa conduta?",
         alternativas: [
             {
-                texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao:"afirmacao"
+                texto: "Incorreta. As leis e regras existem para proteger o processo e evitar abusos.",
+                afirmacao: "Voce prefere metodos tradicionais e respeita os limites da lei,"
             },
             {
-                texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao:"afirmacao"
-            }
-            
-        ]
-    },
-    {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
-        alternativas: [
-            {
-                texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao:"afirmacao"
-            },
-            {
-                texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao:"afirmacao"
+                texto: "Genial. O importante e resolver o caso e prender o culpado, nao importa o metodo.",
+                afirmacao: "Voce valoriza a astucia e a eficiencia acima da burocracia,"
             }
             
         ]
     },
     {
-        enunciado: " Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
+        enunciado: "A agente Teresa Lisbon tenta constantemente manter Patrick Jane sob controle para que a equipe nao perca o emprego. Como voce enxerga a relacao entre os dois?",
         alternativas: [
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao:"afirmacao"
+                texto: "Uma parceria baseada no respeito mutuo, onde um equilibra os excessos do outro.",
+                afirmacao: "reconhece o valor do trabalho em equipe e do equilibrio emocional"
             },
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao:"afirmacao"
+                texto: "Uma relacao complicada em que Jane sempre acaba fazendo o que quer no final.",
+                afirmacao: "e entende que talentos fora da curva nem sempre se adaptam a chefias."
             }
             
-            
+        ]
+    },
+    {
+        enunciado: "Depois de maratonar as temporadas e acompanhar toda a cacada a Red John, voce reflete sobre a principal licao da serie. Qual e a sua conclusao?",
+        alternativas: [
+            {
+                texto: "A verdadeira atencao aos detalhes e a empatia revelam mais sobre as pessoas do que palavras ditas.",
+                afirmacao: "Por isso, aprendeu a prestar mais atencao ao seu redor e ao comportamento humano."
+            },
+            {
+                texto: "Enganar as pessoas e facil se voce souber usar a psicologia a seu favor.",
+                afirmacao: "Por isso, passou a enxergar as interacoes sociais como um grande jogo de xadrez."
+            }
         ]
     },
 ];
@@ -109,7 +106,7 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Seu perfil em O Mentalista...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
 }
